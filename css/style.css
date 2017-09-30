@@ -1,0 +1,344 @@
+html, body { 
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+p { 
+    font-size: 18px;
+    color: #6f6f6f;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: #000;
+}
+
+.site-header {
+    background: url('http://www.etnokrakow.pl/images/upload/massUpload/EtnoKrakow_Zakir_Hussain_and_Rakesh_Chaurasia_Duo_fot_Michal_Ramus-4.jpg') no-repeat center center;
+    padding: 0 40px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.site-header h1 {
+    font-size: 110px;
+    line-height: 0.9;
+    letter-spacing: 20px;
+    padding: 60px 0 0;
+    color: #AFA316;
+}
+
+.site-header p {
+    color:#AFA316;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+
+@media (min-width: 1650px) {
+    .site-header {
+        background: url('http://www.etnokrakow.pl/images/upload/massUpload/EtnoKrakow_Zakir_Hussain_and_Rakesh_Chaurasia_Duo_fot_Michal_Ramus-4.jpg') no-repeat center -300px;
+    }
+}
+
+.site-header.inner {
+    background: #000;
+    background-size: auto;
+    height: auto;
+}
+
+.site-header.inner p {
+    margin-bottom: 50px;
+}
+    
+
+.navbar {
+    font-size: 26px;
+    text-align: right;
+    max-width: 400px;
+}
+
+.navbar-active {
+    background:rgba(0,0,0,.8);;
+    transition: 0.5s all;
+}
+
+.navbar-toggler {
+    margin: 20px 0 0 30px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 20px 30px;
+    font-size:20px;
+    letter-spacing: 5px;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link, 
+.navbar-dark .navbar-nav .nav-link {
+    color: #AFA316;
+    padding: 20px 0 10px;
+    transition: 0.2s all;
+    border-bottom: 3px solid #AFA316;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(175,163,22,.4);
+}
+
+.navbar-collapse.collapse {
+    height: 100vh;
+}
+
+@media ( min-width: 992px ) {
+    .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link, 
+    .navbar-dark .navbar-nav .nav-link {
+        color: #AFA316;
+        border-bottom: 3px solid #AFA316;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+        text-decoration: none;
+        border-bottom: 3px solid #AFA316;
+        color: #AFA316;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        margin: 0 auto;
+    }
+
+}
+
+.about {
+    text-align: center;
+    padding: 140px 0;
+}
+
+.about h2 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.about p {
+    padding-top: 40px;
+}
+
+.about p:nth-child(3) {
+    padding: 0 0 30px ;
+}
+
+.link {
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+    line-height: 1;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    background-color: #000;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.link:hover, .link:focus, .link:active {
+    color: #AFA316;
+    text-decoration: none;
+}
+
+.performances {
+    background: linear-gradient(
+        rgba(175,163,2,.2), 
+        rgba(175,163,22,.4)), url(https://www.moderndrummer.com/wp-content/uploads/2016/05/Zakir-SFJazz-still-RS-2.png) no-repeat;
+    background-position: 0 0;
+    background-attachment:fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 140px 0;
+}
+
+.performances .link {
+    color: #000;
+    background-color: #fff;
+}
+
+.performances h2{
+    color: #fff;
+}
+
+.performances p {
+    color: #fff;
+}
+
+.highlights {
+    margin: 140px 0;
+    text-align: center;
+}
+
+.highlights img {
+    margin: 60px 0 25px;
+    width: 350px;
+    height: 275px;
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+.highlights h4 {
+    padding-bottom: 25px;
+}
+.highlights h4 a {
+    color: #000;
+}
+.highlights h4 a:hover,
+.highlights h4 a:active
+.highlights h4 a:focus {
+    color: #AFA316;
+    text-decoration: none;
+}
+
+.highlights p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.interact {
+    padding: 60px 0;
+    background: #E4DC84;
+    text-align: center;
+}
+
+.interact h4 {
+    margin-top: 40px;
+}
+
+footer {
+    background: #191f35;
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+    color: #AFA316;
+    text-decoration: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+footer .rights {
+    background: #14192a;
+    padding: 20px 0;
+    color: #6f6f6f;
+    font-size: 16px;
+}
+
+/* Comments Section
+------------------------------------------------*/
+.comments {
+    padding: 140px 0;
+}
+
+.comments h4 {
+    padding-bottom: 80px;
+}
+
+.form-control:focus {
+	border-color: #ccc;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-control {
+	height: 50px;
+	-webkit-box-shadow: none; 
+	box-shadow: none; 
+	font-size: 17px;
+}
+
+textarea { 
+	min-height: 200px;
+	max-width: 100%;
+}
+
+label {
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+html input[type=submit] {
+	padding: 15px 45px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+	font-size: 20px;
+	-webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: opacity, background-color;
+  transition-property: opacity, background-color;
+}
+
+html input[type=submit]:hover,
+html input[type=submit]:focus {
+	opacity: .7;
+}
+
+@media (max-width: 767px) {
+	.contact {
+		text-align: center;
+	}
+	.contact .form-group {
+		text-align: left;
+	}
+}
+
