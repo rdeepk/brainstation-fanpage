@@ -5,6 +5,7 @@ html, body {
 }
 p { 
     font-size: 18px;
+    line-height: 1.8;
     color: #6f6f6f;
 }
 
@@ -15,16 +16,22 @@ h1, h2, h3, h4 {
 h2 {
     font-family: 'Oswald', sans-serif;
     color: #000;
-    font-size: 60px;
-    line-height: 1;
+    font-size: 50px;
+    line-height: 1.2;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    h2 {
+    font-size: 60px;
+}
 }
 
 h4 {
     font-size: 30px;
-    line-height: 0.9;
+    line-height: 1.4;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -39,7 +46,7 @@ img {
 
 .site-header {
     background: url('http://www.etnokrakow.pl/images/upload/massUpload/EtnoKrakow_Zakir_Hussain_and_Rakesh_Chaurasia_Duo_fot_Michal_Ramus-4.jpg') no-repeat center center;
-    padding: 0 40px;
+    padding: 0 10px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -50,18 +57,24 @@ img {
 }
 
 .site-header h1 {
-    font-size: 110px;
-    line-height: 0.9;
-    letter-spacing: 20px;
-    padding: 60px 0 0;
+    font-size: 90px;
+    line-height: 1.1;
+    letter-spacing: 12px;
+    padding: 80px 0 0;
     color: #AFA316;
 }
-
+@media (max-width: 767px) {
+.site-header h1 {
+    font-size: 60px;
+    line-height: 1.1;
+}
+}
 .site-header p {
     color:#AFA316;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 1.9;
     letter-spacing: 5px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 @media (min-width: 1650px) {
@@ -94,11 +107,12 @@ img {
 
 .navbar-toggler {
     margin: 20px 0 0 30px;
+    cursor: pointer;
 }
 
 .navbar ul li {
     display: inline-block;
-    margin: 20px 30px;
+    margin: 0 20px;
     font-size:20px;
     letter-spacing: 5px;
 }
@@ -106,20 +120,44 @@ img {
 .navbar-dark .navbar-nav .active>.nav-link,.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link, 
 .navbar-dark .navbar-nav .nav-link {
     color: #AFA316;
-    padding: 20px 0 10px;
+    padding: 30px 20px;
     transition: 0.2s all;
     border-bottom: 3px solid #AFA316;
 }
 
 .navbar-dark .navbar-toggler {
-    border-color: rgba(175,163,22,.4);
+    border-color: rgba(175,163,22,.8);
+    border-radius: .1rem;
 }
 
-.navbar-collapse.collapse {
-    height: 100vh;
+.navbar-nav {
+    min-height: 100vh;
 }
 
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link, 
+.navbar-dark .navbar-nav .nav-link {
+    color: #AFA316;
+    border-bottom: 3px solid #AFA316;
+}
+
+
+.navbar-dark .navbar-nav .nav-item.active a,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(175, 163, 22, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  
 @media ( min-width: 992px ) {
+ /*
     .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link, 
     .navbar-dark .navbar-nav .nav-link {
         color: #AFA316;
@@ -131,7 +169,7 @@ img {
         border-bottom: 3px solid #AFA316;
         color: #AFA316;
     }
-
+*/
     .navbar-expand-lg .navbar-nav {
         margin: 0 auto;
     }
@@ -144,8 +182,7 @@ img {
 }
 
 .about h2 {
-    font-size: 60px;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: 2px;
 }
 
@@ -180,8 +217,8 @@ img {
 
 .performances {
     background: linear-gradient(
-        rgba(175,163,2,.2), 
-        rgba(175,163,22,.4)), url(https://www.moderndrummer.com/wp-content/uploads/2016/05/Zakir-SFJazz-still-RS-2.png) no-repeat;
+        rgba(0,0,0,.1), 
+        rgba(0,0,0,.5)), url(https://www.moderndrummer.com/wp-content/uploads/2016/05/Zakir-SFJazz-still-RS-2.png) no-repeat;
     background-position: 0 0;
     background-attachment:fixed;
     background-size: cover;
@@ -249,12 +286,14 @@ img {
 footer {
     background: #191f35;
     color: #fff;
-    padding: 60px;
+    padding: 50px 30px 40px;
     text-align: center;
 }
 
 footer a {
     color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 footer a:hover,
@@ -264,14 +303,16 @@ footer a:focus {
     text-decoration: none;
 }
 
+footer ul {
+    padding-left: 0;
+}
+
 footer ul li {
     display: inline-block;
     margin: 10px 30px;
 }
 
 footer .rights {
-    background: #14192a;
-    padding: 20px 0;
     color: #6f6f6f;
     font-size: 16px;
 }
@@ -342,3 +383,68 @@ html input[type=submit]:focus {
 	}
 }
 
+.posted {
+    margin: 100px 0;
+}
+
+.posted p {
+    font-size: 15px;
+}
+
+.posted .message {
+    font-size: 17px;
+}
+
+hr {
+    margin-bottom: 80px;
+}
+
+.life h4,
+.music h4,
+.author h4,
+.about h4 {
+    padding: 80px 0 40px;
+}
+
+.image {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.tour {
+    margin: 50px 0;
+    border-bottom: 1px solid #6f6f6f;
+}
+
+.tour p {
+    margin-bottom: 5px;
+}
+
+.tour .date {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: #564848;
+}
+
+.video {
+    text-align: center;
+}
+
+.life,
+.music,
+.author,
+.about {
+    padding-bottom: 90px;
+}
+
+.music .video {
+    margin: 80px 0;
+}
+
+ul.dashed { list-style: none; padding-left: 0; }
+ul.dashed > li { margin-left: 15px;
+color: #6f6f6f;
+font-size: 18px;
+}
+ul.dashed > li::before { content: "- "; margin-left: -15px; }
