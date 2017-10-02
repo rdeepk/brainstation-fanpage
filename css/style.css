@@ -2,9 +2,10 @@ html, body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     color: #000;
+    font-size: 18px;
 }
 p { 
-    font-size: 18px;
+    font-size: 1em;
     line-height: 1.8;
     color: #6f6f6f;
 }
@@ -16,7 +17,7 @@ h1, h2, h3, h4 {
 h2 {
     font-family: 'Oswald', sans-serif;
     color: #000;
-    font-size: 50px;
+    font-size: 2.7em;
     line-height: 1.2;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -25,12 +26,12 @@ h2 {
 
 @media (min-width: 768px) {
     h2 {
-    font-size: 60px;
+    font-size: 3.333em;
 }
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 1.666em;
     line-height: 1.4;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -57,7 +58,7 @@ img {
 }
 
 .site-header h1 {
-    font-size: 90px;
+    font-size: 5em;
     line-height: 1.1;
     letter-spacing: 12px;
     padding: 80px 0 0;
@@ -65,13 +66,13 @@ img {
 }
 @media (max-width: 767px) {
 .site-header h1 {
-    font-size: 60px;
+    font-size: 3.333em;
     line-height: 1.1;
 }
 }
 .site-header p {
     color:#AFA316;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 1.9;
     letter-spacing: 5px;
     margin-top: 10px;
@@ -113,7 +114,7 @@ img {
 .navbar ul li {
     display: inline-block;
     margin: 0 20px;
-    font-size:20px;
+    font-size:.769em;
     letter-spacing: 5px;
 }
 
@@ -171,7 +172,7 @@ img {
     }
 */
     .navbar-expand-lg .navbar-nav {
-        margin: 0 auto;
+       /* margin: 0 auto;*/
     }
 
 }
@@ -199,7 +200,7 @@ img {
     text-align: center;
     transition: all .3s;
     line-height: 1;
-    font-size: 18px;
+    font-size: 1em;
     padding: 20px 40px;
     border-radius: 5px;
     font-family: 'Oswald', sans-serif;
@@ -232,11 +233,7 @@ img {
     background-color: #fff;
 }
 
-.performances h2{
-    color: #fff;
-}
-
-.performances p {
+.performances h2, .performances p {
     color: #fff;
 }
 
@@ -245,7 +242,7 @@ img {
     text-align: center;
 }
 
-.highlights img {
+.highlights img, .albums img {
     margin: 60px 0 25px;
     width: 350px;
     height: 275px;
@@ -253,22 +250,25 @@ img {
     padding: 6px;
 }
 
-.highlights h4 {
+.highlights h4, .albums h4 {
     padding-bottom: 25px;
 }
-.highlights h4 a {
+.highlights h4 a, .albums h4 a {
     color: #000;
 }
 .highlights h4 a:hover,
 .highlights h4 a:active
-.highlights h4 a:focus {
+.highlights h4 a:focus,
+.albums h4 a:hover,
+.albums h4 a:active
+.albums h4 a:focus {
     color: #AFA316;
     text-decoration: none;
 }
 
-.highlights p {
+.highlights p, .albums p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 0.888em;
     line-height: 1.5;
     padding: 0 10px;
 }
@@ -292,7 +292,7 @@ footer {
 
 footer a {
     color: #fff;
-    font-size: 15px;
+    font-size: .833em;
     text-transform: uppercase;
 }
 
@@ -314,7 +314,7 @@ footer ul li {
 
 footer .rights {
     color: #6f6f6f;
-    font-size: 16px;
+    font-size: .888em;
 }
 
 /* Comments Section
@@ -342,7 +342,7 @@ footer .rights {
 	height: 50px;
 	-webkit-box-shadow: none; 
 	box-shadow: none; 
-	font-size: 17px;
+	font-size: .944em;
 }
 
 textarea { 
@@ -352,7 +352,7 @@ textarea {
 
 label {
 	margin-bottom: 10px;
-	font-size: 15px;
+	font-size: .833em;
 	font-weight: 400;
 }
 
@@ -362,7 +362,7 @@ html input[type=submit] {
 	border: 1px solid #000;
 	background-color: #000;
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.111em;
 	-webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: opacity, background-color;
@@ -388,11 +388,11 @@ html input[type=submit]:focus {
 }
 
 .posted p {
-    font-size: 15px;
+    font-size: .833em;
 }
 
 .posted .message {
-    font-size: 17px;
+    font-size: .944em;
 }
 
 hr {
@@ -423,7 +423,7 @@ hr {
 .tour .date {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.111em;
     color: #564848;
 }
 
@@ -442,9 +442,29 @@ hr {
     margin: 80px 0;
 }
 
+.music .albums h4 {
+    font-size: .666em;
+    padding: 0 0 10px;
+}
+
+.music .albums p {
+    font-family: 'Oswald', sans-serif;
+}
+
+.music .albums img {
+    height: 225px;
+}
+
 ul.dashed { list-style: none; padding-left: 0; }
 ul.dashed > li { margin-left: 15px;
 color: #6f6f6f;
-font-size: 18px;
+font-size: 1em;
 }
 ul.dashed > li::before { content: "- "; margin-left: -15px; }
+/*
+.site-header:hover {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+*/
