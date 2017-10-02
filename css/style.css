@@ -254,8 +254,6 @@ hr {
 
 .highlights img, .albums img {
     margin: 60px 0 25px;
-    width: 350px;
-    height: 275px;
     border: 1px solid #ddd;
     padding: 6px;
 }
@@ -278,7 +276,7 @@ hr {
 
 .highlights p, .albums p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.888em;
+    font-size: 0.777em;
     line-height: 1.5;
     padding: 0 10px;
 }
@@ -450,7 +448,7 @@ html input[type=submit]:focus {
 }
 
 .music .albums h4 {
-    font-size: .666em;
+    font-size: .765em;
     padding: 0 0 10px;
 }
 
