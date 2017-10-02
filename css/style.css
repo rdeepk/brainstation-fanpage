@@ -46,11 +46,14 @@ img {
 }
 
 .site-header {
-    background: url('http://www.etnokrakow.pl/images/upload/massUpload/EtnoKrakow_Zakir_Hussain_and_Rakesh_Chaurasia_Duo_fot_Michal_Ramus-4.jpg') no-repeat center center;
-    padding: 0 10px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+}
+
+.banner {
+    background: url('http://www.etnokrakow.pl/images/upload/massUpload/EtnoKrakow_Zakir_Hussain_and_Rakesh_Chaurasia_Duo_fot_Michal_Ramus-4.jpg') no-repeat center center;
+    padding: 0 10px;
     background-size: cover;
     width: 100%;
     box-sizing: border-box;
@@ -79,12 +82,12 @@ img {
 }
 
 @media (min-width: 1650px) {
-    .site-header {
+    .banner {
         background: url('http://www.etnokrakow.pl/images/upload/massUpload/EtnoKrakow_Zakir_Hussain_and_Rakesh_Chaurasia_Duo_fot_Michal_Ramus-4.jpg') no-repeat center -300px;
     }
 }
 
-.site-header.inner {
+.site-header.inner .banner {
     background: #000;
     background-size: auto;
     height: auto;

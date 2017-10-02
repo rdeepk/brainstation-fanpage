@@ -1,40 +1,15 @@
 var posts = {};
 
+/**
+ * @summary Events to trigger when document is ready.
+ */
 $(function () {
     $('.navbar-toggler').click(toggle_styles);
     $(".site-header").mouseenter(function () {
-    $('.site-header').stop()
-                    .animate({opacity: 0.2}, 700)
-                    .animate({opacity: 1}, 1000);
-});
-   /* $(".site-header").mouseenter(function () {
-        $( ".site-header h1" ).animate({
-            'font-size': '+=19'
-        },{  
-          duration: 400,  
-          easing: 'linear'  
-      })
-      $( ".site-header p" ).animate({
-        'font-size': '+=5'
-    },{  
-      duration: 400,  
-      easing: 'linear'  
-  })
+        $('.banner').stop()
+            .animate({ opacity: 0.2 }, 700)
+            .animate({ opacity: 1 }, 1000);
     });
-   $(".site-header").mouseleave(function () {
-        $( ".site-header h1" ).animate({
-            'font-size': '-=19'
-        },{  
-          duration: 400,  
-          easing: 'linear'  
-      })
-      $( ".site-header p" ).animate({
-        'font-size': '-=5'
-    },{  
-      duration: 400,  
-      easing: 'linear'  
-  })
-    });*/
 })
 
 /**
