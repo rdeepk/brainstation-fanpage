@@ -1,4 +1,4 @@
-var posts = {};
+var posts = [];
 
 /**
  * @summary Events to trigger when document is ready.
